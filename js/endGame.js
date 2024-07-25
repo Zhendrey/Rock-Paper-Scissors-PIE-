@@ -60,7 +60,7 @@ console.log(battleItem);
 
 
     const optionDOM = new XMLHttpRequest();
-    optionDOM.open("GET", '/secondary webpages/endGame.html');
+    optionDOM.open("GET", '/secondary-webpages/endGame.html');
     if(optionDOM.status === 200){
         optionDOM.onload = ()=>{
             const optionDOM__data = JSON.parse(optionDOM.responseText);
