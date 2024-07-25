@@ -809,15 +809,21 @@ $opacity-value: 1;
 //! MAIN PAGE @MEDIA QUERIES
 .header__container, .main-page__container{
     @media (max-width: 778px){
-            .decorated-branch{
+            /*.decorated-branch{
                 flex: 0 0 100%;
                 transform: translate(-435px, -25px);
                 &:first-child{
                     transform: translate(-435px, -10px);
                 }
-            }
+            }*/
             .shop-cart{
                 margin: 0px 0px 0px 15px;
+            }
+            .decorated-brances{
+                display: none;
+            }
+            .decorated-branch{
+                display: none;
             }
     }
 }
