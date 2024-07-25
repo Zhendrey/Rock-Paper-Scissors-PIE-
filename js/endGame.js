@@ -13,7 +13,7 @@ document.body.classList.add("battle__conclution-inspirational-quote_fade-down")
 wrapper.classList.add("battle__conclution-inspirational-quote_fade-down");
 
 const quotes = new XMLHttpRequest();
-quotes.open("GET", '/json/quotes.json');
+quotes.open("GET", 'https://zhendrey.github.io//Rock-paper-scissors-PIE-/json/quotes.json');
 
 
 
@@ -60,7 +60,7 @@ console.log(battleItem);
 
 
     const optionDOM = new XMLHttpRequest();
-    optionDOM.open("GET", '/secondary-webpages/endGame.html');
+    optionDOM.open("GET", 'https://zhendrey.github.io//Rock-paper-scissors-PIE-/secondary-webpages/endGame.html');
     if(optionDOM.status === 200){
         optionDOM.onload = ()=>{
             const optionDOM__data = JSON.parse(optionDOM.responseText);

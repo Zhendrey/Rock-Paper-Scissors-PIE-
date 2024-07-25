@@ -52,12 +52,12 @@ let amountOfBoughtItems = JSON.parse(localStorage.getItem("amountOfBoughtItems")
 
     { 
     "amount": 0,
-    "image": `/imgs/pie-store/imgs/02.jpg`
+    "image": `https://zhendrey.github.io//Rock-paper-scissors-PIE-/imgs/pie-store/imgs/02.jpg`
     },
 
     { 
         "amount": 0,
-    "image": `/imgs/pie-store/imgs/01.jpg`
+    "image": `https://zhendrey.github.io//Rock-paper-scissors-PIE-/imgs/pie-store/imgs/01.jpg`
 },
 ];
 
@@ -98,7 +98,7 @@ let areItemsBought = amountOfBoughtItems.filter((amount__object) =>{
 console.log(areItemsBought);
 
 let imageItems = areItemsBought.filter(item =>{
-    return /^\/imgs/.test(item["image"]);
+    return /\/imgs/.test(item["image"]);
 })
 console.log(imageItems);
 
@@ -245,7 +245,7 @@ optionsRow.addEventListener("click",(e)=>{
 
 
 return__mainPageButton.addEventListener("click", ()=>{
-    location.href = "https://zhendrey.github.io/index.html";
+    location.href = "https://zhendrey.github.io/Rock-paper-scissors-PIE/index.html";
 })
 
 let userAndEnemy__INDEXES = [];
@@ -491,7 +491,7 @@ const alternativeQuotes = [
     }
 ];
 const quotes = new XMLHttpRequest() ? new XMLHttpRequest() : alternativeQuotes;
-quotes.open("GET", '/json/quotes.json');
+quotes.open("GET", 'https://zhendrey.github.io//Rock-paper-scissors-PIE-/json/quotes.json');
 quotes.send();
 
 

@@ -61,12 +61,12 @@ let amountOfBoughtItems = JSON.parse(localStorage.getItem("amountOfBoughtItems")
 
     { 
     "amount": 0,
-    "image": `/imgs/pie-store/imgs/02.jpg`
+    "image": `https://zhendrey.github.io//Rock-paper-scissors-PIE-/imgs/pie-store/imgs/02.jpg`
     },
 
     { 
     "amount": 0,
-    "image": `/imgs/pie-store/imgs/01.jpg`
+    "image": `https://zhendrey.github.io//Rock-paper-scissors-PIE-/imgs/pie-store/imgs/01.jpg`
     },
 ];
 

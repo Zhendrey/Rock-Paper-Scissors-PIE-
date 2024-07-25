@@ -177,5 +177,5 @@ let loopCounter = 0;
         }
 
 mainPage__button.addEventListener("click", ()=>{
-    location.href = `https://zhendrey.github.io/secondary-webpages/options.html`
+    location.href = `https://zhendrey.github.io/Rock-paper-scissors-PIE-/secondary-webpages/options.html`
 })
