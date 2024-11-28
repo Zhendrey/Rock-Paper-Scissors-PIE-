@@ -1,1 +1,1 @@
-The current version of "Rock, Paper, Scissors, PIE!" is v. 1.02
+The current version of "Rock, Paper, Scissors, PIE!" is v. 1.0225
