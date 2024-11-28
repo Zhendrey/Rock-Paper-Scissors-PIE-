@@ -151,9 +151,15 @@ let loopCounter = 0;
             }, -150)
         }
         window.addEventListener("load", scene1__FadeUp);
-        window.addEventListener('scroll', showMainPage);
-        if(window.history.length > 1){
-            scrollTo(0,1)
+        if(window.clentWidth > 952){
+            window.addEventListener('scroll', showMainPage);
+        }else{
+            window.addEventListener('click', showMainPage);
+        } 
+
+          if(window.history.length > 1){
+            scrollTo(0,1);
+            showMainPage();
             interactions = addInteractionsAmount(interactions);
             if(interactions.length !== 0){
                 //howMuchPies.classList.add("active-visible")
