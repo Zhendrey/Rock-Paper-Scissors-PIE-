@@ -1,6 +1,7 @@
 const scenes = document.querySelectorAll('.scene');
 const introduction = document.querySelector('.introduction');
 const skipArrows = document.querySelector('.skip-arrows');
+const skipArrows__suggestion = document.querySelector(".skip-arrows__suggestion p");
 const howMuchPies__wrapper = document.querySelector(".how-much-pies__wrapper");
 //!SCENE #1
 const bigRocks = document.querySelector('.big-rocks');
@@ -151,10 +152,14 @@ let loopCounter = 0;
             }, -150)
         }
         window.addEventListener("load", scene1__FadeUp);
-        if(window.clentWidth > 952){
+        if(window.innerWidth > 952){
+            window.removeEventListener("click", showMainPage);
             window.addEventListener('scroll', showMainPage);
+            skipArrows__suggestion.textContent = "Scroll down to skip the introduction";
         }else{
+            window.removeEventListener('scroll', showMainPage);
             window.addEventListener('click', showMainPage);
+            skipArrows__suggestion.textContent = "Click to skip the introduction";
         } 
 
           if(window.history.length > 1){
